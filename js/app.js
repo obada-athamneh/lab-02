@@ -1,15 +1,23 @@
 'use strict';
 
-let user1 = 'obada';
-let user2 = 'eshaq';
-let username = prompt ('what is your name?')
-console.log(username.toLocaleLowerCase());
-username = username.toLocaleLowerCase();
 
-if ( username === 'obada'){
+let username = prompt ('what is your name?');
+alert('welcome ' + username);
+let user2 = confirm('do you like university?')
+if (user2 === true){
+    alert('Hallo good student');
+} else {
+    alert('Hallo bad student');
+}
+let user1 = prompt('guess what is my name?')
+
+console.log(user1.toLocaleLowerCase());
+user1 = user1.toLocaleLowerCase();
+
+if ( user1 === 'obada'){
     alert('welcome obada');
     console.log('welcome obada');
-} else if(username === 'eshaq') {
+} else if(user1 === 'eshaq') {
     alert('welcome eshaq');
     console.log('welcome eshaq');
 } else {
